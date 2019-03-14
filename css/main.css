@@ -1,0 +1,99 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+:root{
+	--base: black;
+  }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: var(--base);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.display{
+	border: 1px solid rgb(196, 105, 105);
+	background: rgb(196, 105, 105);
+	height: 50px;
+	text-align: right;
+	font-weight: bold;
+	font-size: 25px;
+	padding: 10px;
+
+}
+
+.keys{
+	grid-template-columns: repeat(4, 70px);
+	grid-template-rows: repeat(5, 50px);
+	grid-column-gap: 5px;
+	grid-row-gap: 5px;
+	display: grid;
+	background: aqua;
+}
+
+
+#igual{
+	background-image: linear-gradient(to bottom, #fe886a, #ff7033);
+	grid-column: -2;
+	grid-row: 2 / span 4;
+} 
+
+.calculadora{
+	margin-top: 3em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	border: 2px solid #888888;
+	max-width: 299px; /*para cuando es algo como |********|*** lo arregla a |*******| */
+	box-shadow: 1px 1px 15px 2px #888888;
+	border-radius: 5px;
+}
+
+/*cuando se toca se pone verde*/
+button:hover {background-color: #8e8e8f}
+
+button:active { /*feeling of movement*/
+  background-color: #8e8e8f;
+  box-shadow: 0 2px #666;
+  transform: translateY(0.5px);
+}
